@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class BusquedaEnTexto {
+public class busquedadetexto {
     public static boolean buscarLineal(String nombreArchivo, String palabra) {
         try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
             String linea;
