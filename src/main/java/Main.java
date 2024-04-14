@@ -67,6 +67,14 @@ public class Main {
         // Gestión de Fechas
         GestionFechas gestionFechas = new GestionFechas();
         gestionFechas.ejecutar();
+
+        // Ejercicio 5: Mejora de Algoritmos - QuickSort
+        int[] arr = {3, 7, 2, 9, 5};
+        System.out.println("Array original:");
+        imprimirArray(arr);
+        quickSort(arr, 0, arr.length - 1);
+        System.out.println("Array ordenado con QuickSort:");
+        imprimirArray(arr);
     }
 
     // Conteo de Genes
@@ -269,4 +277,39 @@ public class Main {
             listarFechasOrdenadas();
         }
     }
+
+    // Ejercicio 5: Mejora de Algoritmos - QuickSort
+    public static void quickSort(int[] arr, int inicio, int fin) {
+        if (inicio < fin) {
+            int indicePivote = particion(arr, inicio, fin);
+            quickSort(arr, inicio, indicePivote - 1);
+            quickSort(arr, indicePivote + 1, fin);
+        }
+    }
+
+    private static int particion(int[] arr, int inicio, int fin) {
+        int pivote = arr[fin];
+        int i = inicio - 1;
+        for (int j = inicio; j < fin; j++) {
+            if (arr[j] < pivote) {
+                i++;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[fin];
+        arr[fin] = temp;
+        return i + 1;
+    }
+
+    // Método auxiliar para imprimir un array
+    public static void imprimirArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
 }
+
