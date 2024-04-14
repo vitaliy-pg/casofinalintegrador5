@@ -32,4 +32,14 @@ public class FuncionesNumericas {
     public static int encontrarMaximo(int[] numeros) {
         return encontrarMaximoRecursivo(numeros, 0, numeros.length - 1);
     }
+
+    private static int encontrarMaximoRecursivo(int[] numeros, int inicio, int fin) {
+        if (inicio == fin) {
+            return numeros[inicio];
+        }
+        int medio = (inicio + fin) / 2;
+        int max1 = encontrarMaximoRecursivo(numeros, inicio, medio);
+        int max2 = encontrarMaximoRecursivo(numeros, medio + 1, fin);
+        return Math.max(max1, max2);
+    }
 }
