@@ -1,9 +1,7 @@
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
@@ -48,7 +46,7 @@ public class Main {
             int lineaEncontradaLineal = busquedaLineal("patrón", "archivo.txt");
             System.out.println("Patrón encontrado en la línea " + lineaEncontradaLineal + " (búsqueda lineal).");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Error al buscar el patrón en el archivo: " + e.getMessage());
         }
 
         // Búsqueda Binaria (requiere que el archivo esté ordenado)
@@ -56,7 +54,7 @@ public class Main {
             int lineaEncontradaBinaria = busquedaBinaria("patrón", "archivo_ordenado.txt");
             System.out.println("Patrón encontrado en la línea " + lineaEncontradaBinaria + " (búsqueda binaria).");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Error al buscar el patrón en el archivo: " + e.getMessage());
         }
 
         // Gestión de Información Científica
@@ -161,6 +159,7 @@ public class Main {
             }
         } catch (IOException e) {
             e.printStackTrace();
+            return;
         }
 
         Collections.sort(lineas);
@@ -179,66 +178,45 @@ public class Main {
     // Búsqueda Eficiente en Textos
     // Búsqueda Lineal
     public static int busquedaLineal(String palabra, String archivo) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(archivo));
-        String linea;
-        int lineaActual = 0;
-        while ((linea = br.readLine()) != null) {
-            lineaActual++;
-            if (linea.contains(palabra)) {
-                br.close();
-                return lineaActual;
+        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+            String linea;
+            int lineaActual = 0;
+            while ((linea = br.readLine()) != null) {
+                lineaActual++;
+                if (linea.contains(palabra)) {
+                    return lineaActual;
+                }
             }
+            return -1;
         }
-        br.close();
-        return -1;
     }
 
     // Búsqueda Binaria
     public static int busquedaBinaria(String palabra, String archivo) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(archivo));
-        int inicio = 0;
-        int fin = contarLineas(archivo) - 1;
-        while (inicio <= fin) {
-            int medio = inicio + (fin - inicio) / 2;
-            String linea = obtenerLinea(medio, archivo);
-            int comparacion = palabra.compareTo(linea);
-            if (comparacion < 0) {
-                fin = medio - 1;
-            } else if (comparacion > 0) {
-                inicio = medio + 1;
-            } else {
-                br.close();
-                return medio + 1; // Se suma 1 porque los índices de las líneas comienzan desde 1
+        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+            List<String> lineas = new ArrayList<>();
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                lineas.add(linea);
             }
-        }
-        br.close();
-        return -1;
-    }
+            Collections.sort(lineas);
 
-    // Método auxiliar para contar las líneas de un archivo
-    private static int contarLineas(String archivo) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(archivo));
-        int lineas = 0;
-        while (br.readLine() != null) {
-            lineas++;
-        }
-        br.close();
-        return lineas;
-    }
-
-    // Método auxiliar para obtener una línea específica de un archivo
-    private static String obtenerLinea(int numeroLinea, String archivo) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(archivo));
-        int contador = 0;
-        String linea;
-        while ((linea = br.readLine()) != null) {
-            contador++;
-            if (contador == numeroLinea) {
-                br.close();
-                return linea;
+            int inicio = 0;
+            int fin = lineas.size() - 1;
+            while (inicio <= fin) {
+                int medio = inicio + (fin - inicio) / 2;
+                String lineaMedio = lineas.get(medio);
+                int comparacion = palabra.compareTo(lineaMedio);
+                if (comparacion < 0) {
+                    fin = medio - 1;
+                } else if (comparacion > 0) {
+                    inicio = medio + 1;
+                } else {
+                    return medio + 1; // Se suma 1 porque los índices de las líneas comienzan desde 1
+                }
             }
+            return -1;
         }
-        br.close();
-        return null;
     }
 }
+
