@@ -47,3 +47,13 @@ public class BusquedaEnTexto {
         }
         return false;
     }
+
+    public static int cantidadLineas(String nombreArchivo) throws IOException {
+        int lineas = 0;
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+            while (br.readLine() != null) {
+                lineas++;
+            }
+        }
+        return lineas;
+    }

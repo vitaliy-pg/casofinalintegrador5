@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="para que se pueda encontrar el valor maximo">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="implemento la parte de busqueda binaria" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713090077252</updated>
-      <workItem from="1713090078304" duration="2196000" />
+      <workItem from="1713090078304" duration="2512000" />
     </task>
     <task id="LOCAL-00001" summary="proyecto nuevo a empezar que no se ni de que va:)">
       <option name="closed" value="true" />
@@ -170,7 +168,39 @@
       <option name="project" value="LOCAL" />
       <updated>1713092124004</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="añado la segunda parte el main">
+      <option name="closed" value="true" />
+      <created>1713092303686</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713092303686</updated>
+    </task>
+    <task id="LOCAL-00014" summary="creo la funcion de buscar en texto y ahora hare la parte lineal">
+      <option name="closed" value="true" />
+      <created>1713092531363</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713092531363</updated>
+    </task>
+    <task id="LOCAL-00015" summary="implemento la parte de busqueda lineal">
+      <option name="closed" value="true" />
+      <created>1713092562059</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713092562059</updated>
+    </task>
+    <task id="LOCAL-00016" summary="implemento la parte de busqueda binaria">
+      <option name="closed" value="true" />
+      <created>1713092596186</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713092596186</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +220,10 @@
     <MESSAGE value="funciones para calcular potencias mediante multiplicaciones" />
     <MESSAGE value="funciones para encontrar el valor maximo de un conjunto de numeros" />
     <MESSAGE value="para que se pueda encontrar el valor maximo" />
-    <option name="LAST_COMMIT_MESSAGE" value="para que se pueda encontrar el valor maximo" />
+    <MESSAGE value="añado la segunda parte el main" />
+    <MESSAGE value="creo la funcion de buscar en texto y ahora hare la parte lineal" />
+    <MESSAGE value="implemento la parte de busqueda lineal" />
+    <MESSAGE value="implemento la parte de busqueda binaria" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemento la parte de busqueda binaria" />
   </component>
 </project>
