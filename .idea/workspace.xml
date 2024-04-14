@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="creo la parte de calculo de combinaciones geneticas para crear nuevas caddenas">
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
-    </list>
+    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="creo un funcion para conatr numero naturales" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713090077252</updated>
-      <workItem from="1713090078304" duration="1537000" />
+      <workItem from="1713090078304" duration="1859000" />
     </task>
     <task id="LOCAL-00001" summary="proyecto nuevo a empezar que no se ni de que va:)">
       <option name="closed" value="true" />
@@ -114,7 +112,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713091318689</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="he añadido la parti al main ya">
+      <option name="closed" value="true" />
+      <created>1713091806074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713091806074</updated>
+    </task>
+    <task id="LOCAL-00007" summary="creo un funcion para conatr numero naturales">
+      <option name="closed" value="true" />
+      <created>1713091936142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713091936142</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +141,8 @@
     <MESSAGE value="creo el main lo que hara que funcionen todos los paquetes" />
     <MESSAGE value="creo la clase de analisis genomico que hace el conteo de genes" />
     <MESSAGE value="creo la parte de calculo de combinaciones geneticas para crear nuevas caddenas" />
-    <option name="LAST_COMMIT_MESSAGE" value="creo la parte de calculo de combinaciones geneticas para crear nuevas caddenas" />
+    <MESSAGE value="he añadido la parti al main ya" />
+    <MESSAGE value="creo un funcion para conatr numero naturales" />
+    <option name="LAST_COMMIT_MESSAGE" value="creo un funcion para conatr numero naturales" />
   </component>
 </project>

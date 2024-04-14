@@ -8,4 +8,9 @@ public class FuncionesNumericas {
             return n + sumaNaturales(n - 1);
         }
     }
+    public static ArrayList<Integer> listarNumerosEnRango(int inicio, int fin) {
+        ArrayList<Integer> numeros = new ArrayList<>();
+        listarNumerosEnRangoRecursivo(inicio, fin, numeros);
+        return numeros;
+    }
 }
