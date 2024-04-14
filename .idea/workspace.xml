@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="parte de gestion de fechas">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Informaciongenetica/busquedadetexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informaciongenetica/busquedadetexto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Informaciongenetica/fecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informaciongenetica/fecha.java" afterDir="false" />
+    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="parte de gestion de fechas añadida al main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informaciongenetica/GestionFechas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informaciongenetica/GestionFechas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713094154233</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="parte de gestion de fechas añadida al main">
+      <option name="closed" value="true" />
+      <created>1713094792457</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713094792457</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +283,7 @@
     <MESSAGE value="madre mia he tenido qeu eliminar los tres programas &#10;esta parte es la de orgamnizacion de docuementos" />
     <MESSAGE value="parte de busqueda de texto" />
     <MESSAGE value="parte de gestion de fechas" />
-    <option name="LAST_COMMIT_MESSAGE" value="parte de gestion de fechas" />
+    <MESSAGE value="parte de gestion de fechas añadida al main" />
+    <option name="LAST_COMMIT_MESSAGE" value="parte de gestion de fechas añadida al main" />
   </component>
 </project>
