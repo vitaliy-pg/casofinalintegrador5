@@ -57,3 +57,12 @@ public class BusquedaEnTexto {
         }
         return lineas;
     }
+    public static String obtenerLinea(String nombreArchivo, int numeroLinea) throws IOException {
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+            String linea = null;
+            for (int i = 0; i <= numeroLinea; i++) {
+                linea = br.readLine();
+            }
+            return linea;
+        }
+    }
