@@ -19,7 +19,7 @@ public class Main {
             System.out.println("3. Herramientas de Análisis Numérico");
             System.out.println("4. Búsqueda Eficiente en Textos");
             System.out.println("5. Gestión de Información Científica");
-            System.out.println("6. Ejercicio 5: Mejora de Algoritmos - QuickSort");
+            System.out.println("6. Mejora de Algoritmos - QuickSort");
             System.out.println("7. Volver atrás");
             System.out.println("8. Salir");
             System.out.print("Seleccione una opción: ");
@@ -291,7 +291,7 @@ public class Main {
     // Ejercicio 5: Mejora de Algoritmos - QuickSort
     public static void ejercicioQuickSort() {
         // Implementación de QuickSort
-        int[] arr = {5, 3, 8, 4, 2, 7, 1};
+        int[] arr = {5, 3, 8, 4, 2, 7, 1 , 6};
         quickSort(arr, 0, arr.length - 1);
         System.out.println("Array ordenado:");
         imprimirArray(arr);
