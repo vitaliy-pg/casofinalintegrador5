@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="parte de gestion de fechas añadida al main">
+    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="se me esta complicando el fuck main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Informaciongenetica/GestionFechas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informaciongenetica/GestionFechas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informaciongenetica/busquedadetexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informaciongenetica/busquedadetexto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,14 +253,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713094792457</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="se me esta complicando el fuck main">
+      <option name="closed" value="true" />
+      <created>1713097732663</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1713097732663</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="proyecto nuevo a empezar que no se ni de que va:)" />
     <MESSAGE value="creo todos los paquetes necesarios para haceer el proyecto" />
     <MESSAGE value="creo el main lo que hara que funcionen todos los paquetes" />
@@ -284,6 +292,7 @@
     <MESSAGE value="parte de busqueda de texto" />
     <MESSAGE value="parte de gestion de fechas" />
     <MESSAGE value="parte de gestion de fechas añadida al main" />
-    <option name="LAST_COMMIT_MESSAGE" value="parte de gestion de fechas añadida al main" />
+    <MESSAGE value="se me esta complicando el fuck main" />
+    <option name="LAST_COMMIT_MESSAGE" value="se me esta complicando el fuck main" />
   </component>
 </project>
