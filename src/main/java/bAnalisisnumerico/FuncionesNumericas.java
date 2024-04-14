@@ -13,4 +13,12 @@ public class FuncionesNumericas {
         listarNumerosEnRangoRecursivo(inicio, fin, numeros);
         return numeros;
     }
+
+    private static void listarNumerosEnRangoRecursivo(int inicio, int fin, ArrayList<Integer> numeros) {
+        if (inicio > fin) {
+            return;
+        }
+        numeros.add(inicio);
+        listarNumerosEnRangoRecursivo(inicio + 1, fin, numeros);
+    }
 }
