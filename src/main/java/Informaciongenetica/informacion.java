@@ -23,3 +23,27 @@ public class BusquedaEnTexto {
         }
         return false;
     }
+    public static boolean buscarBinaria(String nombreArchivo, String palabra) {
+        // Suponiendo que el archivo está ordenado alfabéticamente
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+            String linea;
+            int inicio = 0;
+            int fin = cantidadLineas(nombreArchivo) - 1;
+
+            while (inicio <= fin) {
+                int medio = inicio + (fin - inicio) / 2;
+                linea = obtenerLinea(nombreArchivo, medio);
+                int comparacion = palabra.compareTo(linea);
+                if (comparacion == 0) {
+                    return true;
+                } else if (comparacion < 0) {
+                    fin = medio - 1;
+                } else {
+                    inicio = medio + 1;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
