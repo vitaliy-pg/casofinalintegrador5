@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="creo un funcion para conatr numero naturales" />
+    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="para que se pueda encontrar el valor maximo">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,8 +45,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713090077252</updated>
-      <workItem from="1713090078304" duration="1859000" />
+      <workItem from="1713090078304" duration="2196000" />
     </task>
     <task id="LOCAL-00001" summary="proyecto nuevo a empezar que no se ni de que va:)">
       <option name="closed" value="true" />
@@ -128,7 +130,47 @@
       <option name="project" value="LOCAL" />
       <updated>1713091936142</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="creo un funcion listar numeros en un rango">
+      <option name="closed" value="true" />
+      <created>1713091973739</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713091973739</updated>
+    </task>
+    <task id="LOCAL-00009" summary="para qeu se puedan listar los numeros">
+      <option name="closed" value="true" />
+      <created>1713092008795</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713092008795</updated>
+    </task>
+    <task id="LOCAL-00010" summary="funciones para calcular potencias mediante multiplicaciones">
+      <option name="closed" value="true" />
+      <created>1713092051469</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713092051469</updated>
+    </task>
+    <task id="LOCAL-00011" summary="funciones para encontrar el valor maximo de un conjunto de numeros">
+      <option name="closed" value="true" />
+      <created>1713092084744</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713092084744</updated>
+    </task>
+    <task id="LOCAL-00012" summary="para que se pueda encontrar el valor maximo">
+      <option name="closed" value="true" />
+      <created>1713092124004</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713092124004</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +185,11 @@
     <MESSAGE value="creo la parte de calculo de combinaciones geneticas para crear nuevas caddenas" />
     <MESSAGE value="he añadido la parti al main ya" />
     <MESSAGE value="creo un funcion para conatr numero naturales" />
-    <option name="LAST_COMMIT_MESSAGE" value="creo un funcion para conatr numero naturales" />
+    <MESSAGE value="creo un funcion listar numeros en un rango" />
+    <MESSAGE value="para qeu se puedan listar los numeros" />
+    <MESSAGE value="funciones para calcular potencias mediante multiplicaciones" />
+    <MESSAGE value="funciones para encontrar el valor maximo de un conjunto de numeros" />
+    <MESSAGE value="para que se pueda encontrar el valor maximo" />
+    <option name="LAST_COMMIT_MESSAGE" value="para que se pueda encontrar el valor maximo" />
   </component>
 </project>
