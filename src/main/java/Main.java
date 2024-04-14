@@ -8,78 +8,57 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Ejemplo de cadena de ADN
-        String cadenaADN = "ATGAGTAGCTAGATGGCTAG";
+        Scanner scanner = new Scanner(System.in);
+        boolean salir = false;
 
-        // Conteo de Genes
-        int cantidadGenes = contarGenes(cadenaADN);
-        System.out.println("Cantidad de genes en la cadena de ADN: " + cantidadGenes);
+        while (!salir) {
+            System.out.println("Menú:");
+            System.out.println("1. Conteo de Genes");
+            System.out.println("2. Cálculo de Combinaciones Genéticas");
+            System.out.println("3. Herramientas de Análisis Numérico");
+            System.out.println("4. Búsqueda Eficiente en Textos");
+            System.out.println("5. Gestión de Información Científica");
+            System.out.println("6. Ejercicio 5: Mejora de Algoritmos - QuickSort");
+            System.out.println("7. Salir");
+            System.out.print("Seleccione una opción: ");
+            int opcion = scanner.nextInt();
 
-        // Cálculo de Combinaciones Genéticas
-        String[] alelos = {"A", "T", "C", "G"};
-        int longitud = 3;
-        ArrayList<String> combinaciones = calcularCombinacionesGeneticas(alelos, longitud);
-        System.out.println("Combinaciones genéticas de longitud " + longitud + ":");
-        for (String combinacion : combinaciones) {
-            System.out.println(combinacion);
+            switch (opcion) {
+                case 1:
+                    contarGenes();
+                    break;
+                case 2:
+                    calcularCombinacionesGeneticas();
+                    break;
+                case 3:
+                    herramientasAnalisisNumerico();
+                    break;
+                case 4:
+                    busquedaEficienteEnTextos();
+                    break;
+                case 5:
+                    gestionInformacionCientifica();
+                    break;
+                case 6:
+                    ejercicioQuickSort();
+                    break;
+                case 7:
+                    salir = true;
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
+            }
         }
-
-        // Herramientas de Análisis Numérico
-        // Ejercicio 1: Sumatoria de Números Naturales
-        int n = 5;
-        System.out.println("Suma de los primeros " + n + " números naturales: " + sumaNaturales(n));
-
-        // Ejercicio 2: Listado de Números en un Rango
-        int inicio = 3;
-        int fin = 7;
-        System.out.println("Números en el rango [" + inicio + ", " + fin + "]: " + listarNumerosEnRango(inicio, fin));
-
-        // Ejercicio 3: Cálculo de Potencias
-        int base = 2;
-        int exponente = 5;
-        System.out.println("Potencia de " + base + " elevado a " + exponente + ": " + calcularPotencia(base, exponente));
-
-        // Ejercicio 4: Encontrar Máximo en un Conjunto de Datos
-        int[] datos = {3, 7, 2, 9, 5};
-        System.out.println("Máximo valor en el conjunto de datos: " + encontrarMaximo(datos));
-
-        // Búsqueda Eficiente en Textos
-        // Búsqueda Lineal
-        try {
-            int lineaEncontradaLineal = busquedaLineal("patrón", "archivo.txt");
-            System.out.println("Patrón encontrado en la línea " + lineaEncontradaLineal + " (búsqueda lineal).");
-        } catch (IOException e) {
-            System.err.println("Error al buscar el patrón en el archivo: " + e.getMessage());
-        }
-
-        // Búsqueda Binaria (requiere que el archivo esté ordenado)
-        try {
-            int lineaEncontradaBinaria = busquedaBinaria("patrón", "archivo_ordenado.txt");
-            System.out.println("Patrón encontrado en la línea " + lineaEncontradaBinaria + " (búsqueda binaria).");
-        } catch (IOException e) {
-            System.err.println("Error al buscar el patrón en el archivo: " + e.getMessage());
-        }
-
-        // Gestión de Información Científica
-        // Ejercicio 9: Organización de Documentos (Orden alfabético de líneas en un archivo de texto)
-        ordenarLineasDeArchivo("documento.txt");
-
-        // Gestión de Fechas
-        GestionFechas gestionFechas = new GestionFechas();
-        gestionFechas.ejecutar();
-
-        // Ejercicio 5: Mejora de Algoritmos - QuickSort
-        int[] arr = {3, 7, 2, 9, 5};
-        System.out.println("Array original:");
-        imprimirArray(arr);
-        quickSort(arr, 0, arr.length - 1);
-        System.out.println("Array ordenado con QuickSort:");
-        imprimirArray(arr);
     }
 
     // Conteo de Genes
-    public static int contarGenes(String cadenaADN) {
-        return contarGenesRecursivo(cadenaADN, 0, 0);
+    public static void contarGenes() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese la cadena de ADN:");
+        String cadenaADN = scanner.nextLine();
+        int cantidadGenes = contarGenesRecursivo(cadenaADN, 0, 0);
+        System.out.println("Cantidad de genes en la cadena de ADN: " + cantidadGenes);
     }
 
     private static int contarGenesRecursivo(String cadenaADN, int index, int count) {
@@ -97,10 +76,17 @@ public class Main {
     }
 
     // Cálculo de Combinaciones Genéticas
-    public static ArrayList<String> calcularCombinacionesGeneticas(String[] alelos, int longitud) {
+    public static void calcularCombinacionesGeneticas() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese la longitud de las combinaciones genéticas:");
+        int longitud = scanner.nextInt();
+        String[] alelos = {"A", "T", "C", "G"};
         ArrayList<String> combinaciones = new ArrayList<>();
         generarCombinaciones(alelos, "", longitud, combinaciones);
-        return combinaciones;
+        System.out.println("Combinaciones genéticas de longitud " + longitud + ":");
+        for (String combinacion : combinaciones) {
+            System.out.println(combinacion);
+        }
     }
 
     private static void generarCombinaciones(String[] alelos, String combinacionActual, int longitud, ArrayList<String> combinaciones) {
@@ -115,7 +101,55 @@ public class Main {
     }
 
     // Herramientas de Análisis Numérico
-    // Ejercicio 1: Sumatoria de Números Naturales
+    public static void herramientasAnalisisNumerico() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Herramientas de Análisis Numérico:");
+        System.out.println("1. Sumatoria de Números Naturales");
+        System.out.println("2. Listado de Números en un Rango");
+        System.out.println("3. Cálculo de Potencias");
+        System.out.println("4. Encontrar Máximo en un Conjunto de Datos");
+        System.out.print("Seleccione una opción: ");
+        int opcion = scanner.nextInt();
+
+        switch (opcion) {
+            case 1:
+                System.out.println("Ingrese el valor de N para la suma de los primeros N números naturales:");
+                int n = scanner.nextInt();
+                int suma = sumaNaturales(n);
+                System.out.println("Suma de los primeros " + n + " números naturales: " + suma);
+                break;
+            case 2:
+                System.out.println("Ingrese el inicio del rango:");
+                int inicio = scanner.nextInt();
+                System.out.println("Ingrese el fin del rango:");
+                int fin = scanner.nextInt();
+                List<Integer> numerosEnRango = listarNumerosEnRango(inicio, fin);
+                System.out.println("Números en el rango [" + inicio + ", " + fin + "]: " + numerosEnRango);
+                break;
+            case 3:
+                System.out.println("Ingrese la base:");
+                int base = scanner.nextInt();
+                System.out.println("Ingrese el exponente:");
+                int exponente = scanner.nextInt();
+                int potencia = calcularPotencia(base, exponente);
+                System.out.println("Potencia de " + base + " elevado a " + exponente + ": " + potencia);
+                break;
+            case 4:
+                System.out.println("Ingrese la cantidad de elementos en el conjunto de datos:");
+                int cantidadDatos = scanner.nextInt();
+                int[] datos = new int[cantidadDatos];
+                System.out.println("Ingrese los elementos del conjunto de datos:");
+                for (int i = 0; i < cantidadDatos; i++) {
+                    datos[i] = scanner.nextInt();
+                }
+                int maximo = encontrarMaximo(datos);
+                System.out.println("Máximo valor en el conjunto de datos: " + maximo);
+                break;
+            default:
+                System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
+        }
+    }
+
     public static int sumaNaturales(int n) {
         if (n == 0) {
             return 0;
@@ -124,7 +158,6 @@ public class Main {
         }
     }
 
-    // Ejercicio 2: Listado de Números en un Rango
     public static List<Integer> listarNumerosEnRango(int inicio, int fin) {
         List<Integer> numeros = new ArrayList<>();
         listarNumerosEnRangoRecursivo(inicio, fin, numeros);
@@ -139,7 +172,6 @@ public class Main {
         listarNumerosEnRangoRecursivo(inicio + 1, fin, numeros);
     }
 
-    // Ejercicio 3: Cálculo de Potencias
     public static int calcularPotencia(int base, int exponente) {
         if (exponente == 0) {
             return 1;
@@ -148,7 +180,6 @@ public class Main {
         }
     }
 
-    // Ejercicio 4: Encontrar Máximo en un Conjunto de Datos
     public static int encontrarMaximo(int[] numeros) {
         return encontrarMaximoRecursivo(numeros, 0, numeros.length - 1);
     }
@@ -163,50 +194,27 @@ public class Main {
         return Math.max(max1, max2);
     }
 
-    // Gestión de Información Científica
-    // Ejercicio 9: Organización de Documentos (Orden alfabético de líneas en un archivo de texto)
-    public static void ordenarLineasDeArchivo(String nombreArchivo) {
-        List<String> lineas = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
-            String linea;
-            while ((linea = br.readLine()) != null) {
-                lineas.add(linea);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            return;
-        }
-
-        Collections.sort(lineas);
-
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("documento_ordenado.txt"))) {
-            for (String linea : lineas) {
-                bw.write(linea);
-                bw.newLine();
-            }
-            System.out.println("Se ha ordenado el archivo correctamente.");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     // Búsqueda Eficiente en Textos
-    // Búsqueda Lineal
-    public static int busquedaLineal(String palabra, String archivo) throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
-            String linea;
-            int lineaActual = 0;
-            while ((linea = br.readLine()) != null) {
-                lineaActual++;
-                if (linea.contains(palabra)) {
-                    return lineaActual;
-                }
+    public static void busquedaEficienteEnTextos() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese la palabra a buscar:");
+        String palabra = scanner.nextLine();
+        System.out.println("Ingrese el nombre del archivo:");
+        String archivo = scanner.nextLine();
+
+        try {
+            int lineaEncontrada = busquedaBinaria(palabra, archivo);
+            if (lineaEncontrada != -1) {
+                System.out.println("La palabra '" + palabra + "' se encontró en la línea " + lineaEncontrada + " del archivo.");
+            } else {
+                System.out.println("La palabra '" + palabra + "' no se encontró en el archivo.");
             }
-            return -1;
+        } catch (IOException e) {
+            System.out.println("Error al buscar la palabra en el archivo.");
+            e.printStackTrace();
         }
     }
 
-    // Búsqueda Binaria
     public static int busquedaBinaria(String palabra, String archivo) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
             List<String> lineas = new ArrayList<>();
@@ -227,58 +235,28 @@ public class Main {
                 } else if (comparacion > 0) {
                     inicio = medio + 1;
                 } else {
-                    return medio + 1; // Se suma 1 porque los índices de las líneas comienzan desde 1
+                    return medio + 1;
                 }
             }
             return -1;
         }
-
     }
 
-    // Gestión de Fechas
-    static class GestionFechas {
-        List<LocalDate> fechas;
-        DateTimeFormatter formatoFecha;
-
-        public GestionFechas() {
-            fechas = new ArrayList<>();
-            formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        }
-
-        public void agregarFecha(LocalDate fecha) {
-            fechas.add(fecha);
-        }
-
-        public void listarFechasOrdenadas() {
-            Collections.sort(fechas);
-            System.out.println("Fechas ordenadas:");
-            for (LocalDate fecha : fechas) {
-                System.out.println(fecha.format(formatoFecha));
-            }
-        }
-
-        public void ejecutar() {
-            Scanner scanner = new Scanner(System.in);
-            boolean continuar = true;
-            while (continuar) {
-                System.out.println("Ingrese una fecha en formato dd/MM/yyyy (o escriba 'fin' para terminar):");
-                String entrada = scanner.nextLine();
-                if (entrada.equalsIgnoreCase("fin")) {
-                    continuar = false;
-                } else {
-                    try {
-                        LocalDate fecha = LocalDate.parse(entrada, formatoFecha);
-                        agregarFecha(fecha);
-                    } catch (Exception e) {
-                        System.out.println("Formato de fecha incorrecto. Por favor, ingrese una fecha válida.");
-                    }
-                }
-            }
-            listarFechasOrdenadas();
-        }
+    // Gestión de Información Científica
+    public static void gestionInformacionCientifica() {
+        // Implementación de Gestión de Información Científica
+        System.out.println("Implementación de Gestión de Información Científica");
     }
 
     // Ejercicio 5: Mejora de Algoritmos - QuickSort
+    public static void ejercicioQuickSort() {
+        // Implementación de QuickSort
+        int[] arr = {5, 3, 8, 4, 2, 7, 1};
+        quickSort(arr, 0, arr.length - 1);
+        System.out.println("Array ordenado:");
+        imprimirArray(arr);
+    }
+
     public static void quickSort(int[] arr, int inicio, int fin) {
         if (inicio < fin) {
             int indicePivote = particion(arr, inicio, fin);
@@ -312,4 +290,3 @@ public class Main {
         System.out.println();
     }
 }
-// es hora de mejorar el codigo al maximo
