@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class busquedadetexto {
-    public static boolean buscarLineal(String nombreArchivo, String palabra) {
+    public static boolean buscarLineal( String nombreArchivo, String palabra) {
         try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
             String linea;
             while ((linea = br.readLine()) != null) {
@@ -19,7 +19,7 @@ public class busquedadetexto {
         return false;
     }
 
-    public static boolean buscarBinaria(String nombreArchivo, String palabra) {
+    public static boolean buscarBinaria( String nombreArchivo, String palabra) {
         // Implementación de la búsqueda binaria
         return false;
     }

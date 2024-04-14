@@ -1,6 +1,10 @@
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
+
 import Análisis.AnalisisGenomico;
+import Informaciongenetica.GestionFechas;
 import bAnalisisnumerico.FuncionesNumericas;
 
 import static Análisis.AnalisisGenomico.contarGenes;
@@ -79,7 +83,32 @@ public class Main {
             return Math.max(max1, max2);
         }
     }
+        public static int buscarlineal(String nombreArchivo, String palabra) {
+            return 0;
+        }
+        public static int buscarBinaria(String nombreArchivo, String palabra) {
+            return 0;
+        }
+    public class MainGestionFechas {
+        public static void main(String[] args) {
+            List<LocalDate> fechas = new ArrayList<>();
+            fechas.add(LocalDate.of(2024, 4, 1));
+            fechas.add(LocalDate.of(2023, 12, 15));
+            fechas.add(LocalDate.of(2024, 2, 28));
 
+            System.out.println("Fechas sin ordenar:");
+            for (LocalDate fecha : fechas) {
+                System.out.println(fecha);
+            }
+
+            GestionFechas.ordenarFechas(fechas);
+
+            System.out.println("\nFechas ordenadas:");
+            for (LocalDate fecha : fechas) {
+                System.out.println(fecha);
+            }
+        }
+    }
 }
 
 
