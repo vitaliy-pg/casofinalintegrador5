@@ -10,3 +10,16 @@ public class BusquedaEnTexto {
         System.out.println("Resultado de la búsqueda lineal: " + buscarLineal("archivo.txt", palabraBuscada));
         System.out.println("Resultado de la búsqueda binaria: " + buscarBinaria("archivo_ordenado.txt", palabraBuscada));
     }
+    public static boolean buscarLineal(String nombreArchivo, String palabra) {
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                if (linea.contains(palabra)) {
+                    return true;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
