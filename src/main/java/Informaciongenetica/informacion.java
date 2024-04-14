@@ -3,13 +3,8 @@ package Informaciongenetica;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-public class BusquedaEnTexto {
-    public static void main(String[] args) {
-        String palabraBuscada = "ejemplo";
-        System.out.println("Resultado de la búsqueda lineal: " + buscarLineal("archivo.txt", palabraBuscada));
-        System.out.println("Resultado de la búsqueda binaria: " + buscarBinaria("archivo_ordenado.txt", palabraBuscada));
-    }
+
+public class informacion {
     public static boolean buscarLineal(String nombreArchivo, String palabra) {
         try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
             String linea;
@@ -56,4 +51,14 @@ public class BusquedaEnTexto {
             }
         }
         return lineas;
+    }
+    public static String obtenerLinea(String nombreArchivo, int numeroLinea) throws IOException {
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+            String linea = null;
+            for (int i = 0; i <= numeroLinea; i++) {
+                linea = br.readLine();
+            }
+            return linea;
+        }
+    }
     }
