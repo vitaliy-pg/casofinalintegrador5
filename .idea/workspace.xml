@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="ya estan todas las funciones es hora de mejorar el codigo poniendo un buen menu y que sea interactivo">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="hemos añadido un menu a seguir metiendo cosas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -326,14 +324,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713105905922</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="hemos añadido un menu a seguir metiendo cosas">
+      <option name="closed" value="true" />
+      <created>1713106380787</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1713106380787</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creo un funcion listar numeros en un rango" />
     <MESSAGE value="para qeu se puedan listar los numeros" />
     <MESSAGE value="funciones para calcular potencias mediante multiplicaciones" />
     <MESSAGE value="funciones para encontrar el valor maximo de un conjunto de numeros" />
@@ -358,6 +363,7 @@
     <MESSAGE value="YA FUNCIONA LA FECHA Y HORA" />
     <MESSAGE value="añado los metodos de quicksort" />
     <MESSAGE value="ya estan todas las funciones es hora de mejorar el codigo poniendo un buen menu y que sea interactivo" />
-    <option name="LAST_COMMIT_MESSAGE" value="ya estan todas las funciones es hora de mejorar el codigo poniendo un buen menu y que sea interactivo" />
+    <MESSAGE value="hemos añadido un menu a seguir metiendo cosas" />
+    <option name="LAST_COMMIT_MESSAGE" value="hemos añadido un menu a seguir metiendo cosas" />
   </component>
 </project>

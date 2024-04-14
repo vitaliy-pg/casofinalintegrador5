@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
+        List<Integer> historial = new ArrayList<>(); // Para almacenar las opciones anteriores
 
         while (!salir) {
             System.out.println("Menú:");
@@ -19,30 +20,68 @@ public class Main {
             System.out.println("4. Búsqueda Eficiente en Textos");
             System.out.println("5. Gestión de Información Científica");
             System.out.println("6. Ejercicio 5: Mejora de Algoritmos - QuickSort");
-            System.out.println("7. Salir");
+            System.out.println("7. Volver atrás");
+            System.out.println("8. Salir");
             System.out.print("Seleccione una opción: ");
             int opcion = scanner.nextInt();
 
             switch (opcion) {
                 case 1:
                     contarGenes();
+                    historial.add(1);
                     break;
                 case 2:
                     calcularCombinacionesGeneticas();
+                    historial.add(2);
                     break;
                 case 3:
                     herramientasAnalisisNumerico();
+                    historial.add(3);
                     break;
                 case 4:
                     busquedaEficienteEnTextos();
+                    historial.add(4);
                     break;
                 case 5:
                     gestionInformacionCientifica();
+                    historial.add(5);
                     break;
                 case 6:
                     ejercicioQuickSort();
+                    historial.add(6);
                     break;
                 case 7:
+                    if (!historial.isEmpty()) {
+                        historial.remove(historial.size() - 1);
+                        if (!historial.isEmpty()) {
+                            opcion = historial.get(historial.size() - 1);
+                            historial.remove(historial.size() - 1);
+                            switch (opcion) {
+                                case 1:
+                                    contarGenes();
+                                    break;
+                                case 2:
+                                    calcularCombinacionesGeneticas();
+                                    break;
+                                case 3:
+                                    herramientasAnalisisNumerico();
+                                    break;
+                                case 4:
+                                    busquedaEficienteEnTextos();
+                                    break;
+                                case 5:
+                                    gestionInformacionCientifica();
+                                    break;
+                                case 6:
+                                    ejercicioQuickSort();
+                                    break;
+                            }
+                        }
+                    } else {
+                        System.out.println("No hay opciones anteriores para volver.");
+                    }
+                    break;
+                case 8:
                     salir = true;
                     System.out.println("Saliendo del programa...");
                     break;
@@ -99,6 +138,7 @@ public class Main {
             generarCombinaciones(alelos, combinacionActual + alelo, longitud - 1, combinaciones);
         }
     }
+
 
     // Herramientas de Análisis Numérico
     public static void herramientasAnalisisNumerico() {
