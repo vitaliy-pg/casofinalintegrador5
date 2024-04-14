@@ -4,14 +4,10 @@ import java.io.*;
 import java.util.*;
 
 public class organizaciondocumentos {
-    public static void main(String[] args) {
-        ordenarLineas("documento.txt");
-    }
-
-    public static void ordenarLineas(String nombreArchivo) {
+    public static void ordenarLineas(String nombreArchivoEntrada, String nombreArchivoSalida) {
         List<String> lineas = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivoEntrada))) {
             String linea;
             while ((linea = br.readLine()) != null) {
                 lineas.add(linea);
@@ -22,7 +18,7 @@ public class organizaciondocumentos {
 
         Collections.sort(lineas);
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("documento_ordenado.txt"))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivoSalida))) {
             for (String linea : lineas) {
                 bw.write(linea);
                 bw.newLine();
