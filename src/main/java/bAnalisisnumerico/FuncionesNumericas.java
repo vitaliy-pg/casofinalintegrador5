@@ -28,4 +28,8 @@ public class FuncionesNumericas {
             return base * calcularPotencia(base, exponente - 1);
         }
     }
+
+    public static int encontrarMaximo(int[] numeros) {
+        return encontrarMaximoRecursivo(numeros, 0, numeros.length - 1);
+    }
 }
