@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="mejorando cositas">
-      <change afterPath="$PROJECT_DIR$/src/main/java/analisisgenetico/counter.java" afterDir="false" />
+    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="mas clases creadas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/gestioninformacion/busuqedatexto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gestioninformacion/gestiondocumentos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gestioninformacion/gestionfechas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713090077252</updated>
       <workItem from="1713090078304" duration="2512000" />
-      <workItem from="1713296657109" duration="300000" />
+      <workItem from="1713296657109" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="proyecto nuevo a empezar que no se ni de que va:)">
       <option name="closed" value="true" />
@@ -343,15 +345,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713106899078</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="primera clase creada">
+      <option name="closed" value="true" />
+      <created>1713297001523</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1713297001523</updated>
+    </task>
+    <task id="LOCAL-00034" summary="mas clases creadas">
+      <option name="closed" value="true" />
+      <created>1713297117460</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1713297117460</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="funciones para calcular potencias mediante multiplicaciones" />
-    <MESSAGE value="funciones para encontrar el valor maximo de un conjunto de numeros" />
     <MESSAGE value="para que se pueda encontrar el valor maximo" />
     <MESSAGE value="añado la segunda parte el main" />
     <MESSAGE value="creo la funcion de buscar en texto y ahora hare la parte lineal" />
@@ -375,6 +391,8 @@
     <MESSAGE value="ya estan todas las funciones es hora de mejorar el codigo poniendo un buen menu y que sea interactivo" />
     <MESSAGE value="hemos añadido un menu a seguir metiendo cosas" />
     <MESSAGE value="mejorando cositas" />
-    <option name="LAST_COMMIT_MESSAGE" value="mejorando cositas" />
+    <MESSAGE value="primera clase creada" />
+    <MESSAGE value="mas clases creadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="mas clases creadas" />
   </component>
 </project>
