@@ -1,8 +1,8 @@
-package gestioninformacion;
+package MenuInteractivo.GestionInformacionCientífica;
 import java.io.*;
 import java.util.*;
 
-public class gestiondocumentos {
+public class OrganizadorDocumentos {
 
     public static void ordenarArchivo(String rutaArchivo) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(rutaArchivo));

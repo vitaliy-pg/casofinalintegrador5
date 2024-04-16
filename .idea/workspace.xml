@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="mas clases creadas">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gestioninformacion/busuqedatexto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gestioninformacion/gestiondocumentos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gestioninformacion/gestionfechas.java" afterDir="false" />
+    <list default="true" id="87c2ecd5-3643-4eb1-bcc4-2a242698a0cc" name="Changes" comment="ultima clase creada">
+      <change afterPath="$PROJECT_DIR$/src/main/MenuInteractivo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analisisgenetico/combinaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MenuInteractivo/MenuInteractivo/AnalisisGenomico/GeneticCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analisisgenetico/counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MenuInteractivo/MenuInteractivo/AnalisisGenomico/GeneCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analisisnumerico/herramientas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MenuInteractivo/AnalisisNumerico/HerramientasAnalisisNumerico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gestioninformacion/busuqedatexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MenuInteractivo/GestionInformacionCientífica/BusquedaTexto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gestioninformacion/gestiondocumentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MenuInteractivo/GestionInformacionCientífica/OrganizadorDocumentos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gestioninformacion/gestionfechas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MenuInteractivo/GestionInformacionCientífica/GestionFechas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/optimizacion/quickshort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MenuInteractivo/Optimizacion/QuickSortOptimizado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,26 +45,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main$GestionFechas.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main$GestionFechas.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main$GestionFechas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main$GestionFechas" />
@@ -87,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713090077252</updated>
       <workItem from="1713090078304" duration="2512000" />
-      <workItem from="1713296657109" duration="619000" />
+      <workItem from="1713296657109" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="proyecto nuevo a empezar que no se ni de que va:)">
       <option name="closed" value="true" />
@@ -361,15 +371,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713297117460</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="mas clases credas">
+      <option name="closed" value="true" />
+      <created>1713297364357</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1713297364357</updated>
+    </task>
+    <task id="LOCAL-00036" summary="ultima clase creada">
+      <option name="closed" value="true" />
+      <created>1713297463437</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1713297463437</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="para que se pueda encontrar el valor maximo" />
-    <MESSAGE value="añado la segunda parte el main" />
     <MESSAGE value="creo la funcion de buscar en texto y ahora hare la parte lineal" />
     <MESSAGE value="implemento la parte de busqueda lineal" />
     <MESSAGE value="implemento la parte de busqueda binaria" />
@@ -393,6 +417,8 @@
     <MESSAGE value="mejorando cositas" />
     <MESSAGE value="primera clase creada" />
     <MESSAGE value="mas clases creadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="mas clases creadas" />
+    <MESSAGE value="mas clases credas" />
+    <MESSAGE value="ultima clase creada" />
+    <option name="LAST_COMMIT_MESSAGE" value="ultima clase creada" />
   </component>
 </project>

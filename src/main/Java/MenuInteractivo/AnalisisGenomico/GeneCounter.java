@@ -1,6 +1,7 @@
-package analisisgenetico;
+package MenuInteractivo.AnalisisGenomico;
 
-public class counter {
+
+public class GeneCounter {
     public static int contarGenes(String adn) {
         if (adn == null || adn.isEmpty()) {
             return 0;

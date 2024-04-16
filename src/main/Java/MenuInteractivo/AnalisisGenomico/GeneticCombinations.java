@@ -1,9 +1,9 @@
-package analisisgenetico;
+package MenuInteractivo.AnalisisGenomico;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class combinaciones {
+public class GeneticCombinations {
     public static List<List<String>> generarCombinaciones(List<String> genes) {
         if (genes == null || genes.isEmpty()) {
             return new ArrayList<>();

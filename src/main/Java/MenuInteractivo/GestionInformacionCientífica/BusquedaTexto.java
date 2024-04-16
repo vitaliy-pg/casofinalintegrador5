@@ -1,8 +1,8 @@
-package gestioninformacion;
+package MenuInteractivo.GestionInformacionCientífica;
 
 
 
-public class busuqedatexto {
+public class BusquedaTexto {
 
     public static boolean busquedaLineal(String[] textos, String palabra) {
         for (String texto : textos) {

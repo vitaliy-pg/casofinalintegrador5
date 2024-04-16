@@ -1,6 +1,6 @@
-package analisisnumerico;
+package MenuInteractivo.AnalisisNumerico;
 
-public class herramientas {
+public class HerramientasAnalisisNumerico {
 
     public static int sumatoria(int n) {
         if (n <= 0) {

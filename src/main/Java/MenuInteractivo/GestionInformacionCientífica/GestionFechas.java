@@ -1,15 +1,15 @@
-package gestioninformacion;
+package MenuInteractivo.GestionInformacionCientífica;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class gestionfechas {
+public class GestionFechas {
 
     private List<LocalDate> fechas;
 
-    public gestionfechas () {
+    public GestionFechas () {
         this.fechas = new ArrayList<>();
     }
 

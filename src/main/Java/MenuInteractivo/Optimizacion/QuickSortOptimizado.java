@@ -1,6 +1,6 @@
-package optimizacion;
+package MenuInteractivo.Optimizacion;
 
-public class quickshort {
+public class QuickSortOptimizado {
 
     private static int hacerParticion(int[] datos, int primerElemento, int ultimoElemento) {
         int indiceMedio = primerElemento + (ultimoElemento - primerElemento) / 2;
